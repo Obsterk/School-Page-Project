@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Obour">
+        <title>Registration Page</title>
+        <style>
+            h1{
+                background-color: red;
+                color: white;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            body{
+                background-color: black;
+            }
+
+            label{
+                color: white;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Register Now</h1>
+        </header>
+
+        <form>
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" name = "name" required><br><br>
+
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name = "email" required 
+            placeholder= Hint:123@gmail.com><br><br>
+            
+
+            <label for="number">Phone Number: </label>
+            <input type="tel" id="number" name ="number" required><br><br>
+
+            <label for="ticket">Ticket Type: </label>
+            <select name="ticketType" id="ticketType">
+                <option value ="General">General ticket</option>
+                <option value ="VIP">VIP ticket</option>
+            </select><br><br>
+
+
+            <button onclick="alertButton()" >Submit </button><br><br>
+
+            <a href="file:///Users/koby/Desktop/html/index.html">
+                <button id="homeButton">Back Home</button></a>
+        </form>
+        <script>
+            function alertButton(){
+                alert("Succesful!");
+            }
+        </script>
+    </body>
+</html>
